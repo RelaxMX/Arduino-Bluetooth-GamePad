@@ -2,7 +2,7 @@ uint32_t st;
 uint32_t nd;
 uint32_t st_o;
 uint32_t nd_o;
-static const uint8_t pins[] = {2,3,4,5,6,7,8,9,10,11,12,A0,A1,A2,A3};
+static const uint8_t pins[] = {2,3,4,5,6,7,8,9,10,11,12,A0,A1,A2,A3}; // button pins
 
 void setup() {
   st = 0;
@@ -14,7 +14,7 @@ void setup() {
      digitalWrite(  pins[p] , HIGH);
   }
   Serial.begin(115200);
-  delay(500); //Delay
+  delay(500);
 }
 
 void loop() {
